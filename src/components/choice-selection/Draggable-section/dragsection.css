@@ -1,0 +1,119 @@
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.links p {
+  color: gray;
+}
+
+.span {
+  color: gray;
+}
+
+.service-link {
+  text-decoration: none;
+  color: black;
+}
+
+.service-link:hover,
+.service-link:focus {
+  color: black; /* Ensure color remains the same on hover/focus */
+}
+
+h1 {
+  margin: 0px 10px;
+  font-size: 2.3rem;
+}
+
+.wrapper {
+  padding: 0px 35px;
+  position: sticky;
+  top: 84px;
+  overflow-x: hidden;
+  width: 585px;
+  background: #fff;
+  border-radius: 13px;
+  scroll-behavior: smooth;
+}
+
+.icon-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 620px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 55px;
+  height: 25px; /* Adjusted to be square for better appearance */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  background: transparent; /* Ensure background is transparent by default */
+  transition: background 0.3s; /* Smooth transition for background change */
+}
+
+.icon:hover {
+  background: rgb(225, 225, 225); /* Gray background on hover */
+}
+
+.icon i {
+  font-size: 1.5rem;
+  color: black; /* Ensure icon color contrasts with gray background */
+}
+
+.wrapper .tabs-box {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.wrapper .tabs-box::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.tabs-box.dragging {
+  scroll-behavior: auto;
+  cursor: grabbing;
+}
+
+.tabs-box .tab {
+  cursor: pointer;
+  font-size: 1rem;
+  white-space: nowrap;
+  background: #fff;
+  padding: 8px 20px;
+  border-radius: 30px;
+  border: none;
+  transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.tabs-box .tab:hover {
+  background: rgb(244, 244, 244);
+}
+
+.tabs-box .tab:focus {
+  color: #fff;
+  background: black;
+  border-color: transparent;
+  transform: scale(1.05);
+}
+
+.tabs-box .tab.active {
+  background: black;
+  color: white;
+  border-color: transparent;
+}

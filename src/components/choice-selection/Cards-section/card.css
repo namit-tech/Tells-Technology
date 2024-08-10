@@ -1,0 +1,68 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .card {
+    border: 1px solid rgb(207, 207, 207);
+    width: 40vw;
+    height: 23vh;
+    padding: 0px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Vertically center all items */
+    justify-content: space-between; /* Space between text and button */
+    /* line-height: 1rem; */
+  }
+  
+  .no-text {
+    height: 18vh;
+  }
+  
+  .card-text h3 {
+    font-weight: 500;
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .non-text {
+    position: relative;
+    left: 180px;
+    top: -20px;
+  }
+  
+  .card:hover {
+    background: rgb(244, 244, 244);
+  }
+  
+  .text-color {
+    color: gray;
+    line-height: 0.7rem;
+  }
+  
+  .card-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem; /* Adjust width for button size */
+    height: 2.5rem; /* Adjust height for button size */
+    text-align: center;
+    border-radius: 10px; /* Makes the button circular */
+    background: rgb(244, 244, 244);
+    cursor: pointer;
+  }
+  
+  .card-btn a {
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: inherit;
+    line-height: 1; /* Center the "+" vertically */
+  }
+  
+  .card-btn:hover {
+    background-color: rgb(221, 219, 219);
+  }
+  

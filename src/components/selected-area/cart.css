@@ -1,0 +1,78 @@
+.box {
+    border: 1px solid rgb(212, 212, 212);
+    padding: 30px;
+    width: 25vw;
+    height: 65vh;
+    border-radius: 10px;
+    position: fixed; 
+    top: 100px; 
+    overflow: hidden; 
+    z-index: 10;
+  }
+  
+  
+  .area-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .area-1 img {
+    width: 5vw;
+    height: 10vh;
+    border-radius: 10px;
+  }
+  
+  .line-2 {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .head-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3rem;
+  }
+  
+  .head-text p {
+    margin: 0;
+  }
+  
+  .location {
+    color: gray;
+  }
+  
+  .boldness {
+    font-weight: 500;
+  }
+  
+  .area-2 p {
+    color: gray;
+    font-weight: 500;
+  }
+  
+  .total-free {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+  }
+  
+  .btn {
+    position: relative;
+    top: 230px;
+    text-align: center;
+  }
+  
+  .btn button {
+    width: 25vw;
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    border: none;
+  }
+  
+  .btn button:hover {
+    background-color: rgb(189, 188, 188);
+  }
+  
